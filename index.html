@@ -20,6 +20,8 @@
                 background-color: black;
             }
             #cont{
+                position: relative;
+                bottom: 20px;
                 height: 50vh;
                 width: 30vw;
                 margin: auto;
@@ -84,15 +86,25 @@
                 height: 60vh;
             }
         }
+      
+        #res{
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 10%;
+            color: rgb(8, 6, 6);
+            background-color: rgb(255, 255, 255);
+        }
         </style>
     </head>
     <body>
+        
       <div id="cont">
        
-        
-
         <div id="f">
-            <button class="btn" style="display:block" id="a1" value="a1" onclick="tic(value)"></button>
+            <button class="btn" style="display:block" id="a1"  value="a1" onclick="tic(value)"></button>
             <button class="btn" style="display:block" id="a2" value="a2" onclick="tic(value)" ></button>
             <button class="btn" style="display:block" id="a3" value="a3" onclick="tic(value)"></button></button>
         </div>
@@ -109,6 +121,8 @@
 
       </div>
       <div id="reset"></div>
+    
+      <div id="res" onclick="reset()">Reset The Game</div>
       <div id="bekkar" style="display:block"></div>
        
         
@@ -147,49 +161,49 @@
                         a1a.background="green"
                         a3a.background="green"
                         a2a.background="green"
-                        document.getElementById('reset').textContent="X - Won...Please refresh the page to replay."  
+                        document.getElementById('reset').textContent="X - Won."  
                     }
                     if(a1=="x" && a4=="x"&& a7=="x"){c=1;
                         a1a.background="green"
                         a4a.background="green"
                         a7a.background="green"
-                        document.getElementById('reset').textContent="X - Won...Please refresh the page to replay."    
+                        document.getElementById('reset').textContent="X - Won."    
                     }
                     if(a1=="x" && a5=="x"&& a9=="x"){c=1;
                         a1a.background="green"
                         a5a.background="green"
                         a9a.background="green"
-                        document.getElementById('reset').textContent="X - Won...Please refresh the page to replay."  
+                        document.getElementById('reset').textContent="X - Won."  
                     }
                     if(a2=="x" && a5=="x"&& a8=="x"){c=1;
                         a2a.background="green"
                         a5a.background="green"
                         a8a.background="green"
-                        document.getElementById('reset').textContent="X - Won...Please refresh the page to replay."  
+                        document.getElementById('reset').textContent="X - Won."  
                     }
                     if(a3=="x" && a5=="x"&& a7=="x"){c=1;
                         a5a.background="green"
                         a3a.background="green"
                         a7a.background="green"
-                        document.getElementById('reset').textContent="X - Won...Please refresh the page to replay."  
+                        document.getElementById('reset').textContent="X - Won."  
                     }
                     if(a3=="x" && a6=="x"&& a9=="x"){c=1;
                         a3a.background="green"
                         a6a.background="green"
                         a9a.background="green"
-                        document.getElementById('reset').textContent="X - Won...Please refresh the page to replay."  }
+                        document.getElementById('reset').textContent="X - Won."  }
                     if(a4=="x" && a5=="x"&& a6=="x"){c=1;
                         a4a.background="green"
                         a6a.background="green"
                         a5a.background="green"
-                        document.getElementById('reset').textContent="X - Won...Please refresh the page to replay."  }
+                        document.getElementById('reset').textContent="X - Won."  }
                         
                     
                     if(a7=="x" && a8=="x"&& a9=="x"){c=1;
                         a7a.background="green"
                         a8a.background="green"
                         a9a.background="green"
-                        document.getElementById('reset').textContent="X - Won...Please refresh the page to replay."  } 
+                        document.getElementById('reset').textContent="X - Won."  } 
                     }
                 
             
@@ -221,42 +235,42 @@
                         a1a.background="green"
                         a3a.background="green"
                         a2a.background="green"
-                        document.getElementById('reset').textContent="O-won..Please refresh the page to Replay"  
+                        document.getElementById('reset').textContent="O-won" 
                     }
                     if(a1=="o" && a4=="o"&& a7=="o"){c=1;
                         a1a.background="green"
                         a4a.background="green"
                         a7a.background="green"
-                        document.getElementById('reset').textContent="O-won..Please refresh the page to Replay"    
+                        document.getElementById('reset').textContent="O-won"    
                     }
                     if(a1=="o" && a5=="o"&& a9=="o"){c=1;
                         a1a.background="green"
                         a5a.background="green"
                         a9a.background="green"
-                        document.getElementById('reset').textContent="O-won..Please refresh the page to Replay"  
+                        document.getElementById('reset').textContent="O-won " 
                     }
                     if(a2=="o" && a5=="o"&& a8=="o"){c=1;
                         a2a.background="green"
                         a5a.background="green"
                         a8a.background="green"
-                        document.getElementById('reset').textContent="O-won..Please refresh the page to Replay"  
+                        document.getElementById('reset').textContent="O-won"  
                     }
                     if(a3=="o" && a5=="o"&& a7=="o"){c=1;
                         a5a.background="green"
                         a3a.background="green"
                         a7a.background="green"
-                        document.getElementById('reset').textContent="O-won..Please refresh the page to Replay"  
+                        document.getElementById('reset').textContent="O-won"  
                     }
                     if(a3=="o" && a6=="o"&& a9=="o"){c=1;
                         a3a.background="green"
                         a6a.background="green"
                         a9a.background="green"
-                        document.getElementById('reset').textContent="O-won..Please refresh the page to Replay"  }
+                        document.getElementById('reset').textContent="O-won"  }
                     if(a4=="o" && a5=="o"&& a6=="o"){c=1;
                         a4a.background="green"
                         a6a.background="green"
                         a5a.background="green"
-                        document.getElementById('reset').textContent="O-won..Please refresh the page to Replay"  }
+                        document.getElementById('reset').textContent="O-won"  }
                         
                     
                     if(a7=="o" && a8=="o"&& a9=="o"){
@@ -264,10 +278,14 @@
                         a7a.background="green"
                         a8a.background="green"
                         a9a.background="green"
-                        document.getElementById('reset').textContent="O-won..Please refresh the page to Replay"  } 
+                        document.getElementById('reset').textContent="O-won"  } 
+                    
                     
                 }
+            
             }
+            
+        
             var a1=document.getElementById('a1').textContent;
                     var a1a=document.getElementById('a1').style;
                     var a2=document.getElementById('a2').textContent;
@@ -286,13 +304,36 @@
                     var a8a=document.getElementById('a8').style;
                     var a9=document.getElementById('a9').textContent;
                     var a9a=document.getElementById('a9').style;
-                    if(a1!="" && a2!="" && a3!="" && a4!="" && a5!="" && a6!="" && a7!="" && a8!="" && a9!="" && c==0){
-                        document.getElementById('reset').textContent="Game draw...Please refresh the page to replay."
-
-                    }
-       }
+                  if(a1!="" && a2!="" && a3!="" && a4!="" && a5!="" && a6!="" && a7!="" && a8!="" && a9!="" && c==0){
+                    document.getElementById('reset').innerText="Game Draw"
+                  }
+        }
+        
+       
                 
-            
+           function reset(){
+            var a1=document.getElementById('a1').textContent="";
+                    var a2=document.getElementById('a2').textContent="";
+                    var a3=document.getElementById('a3').textContent="";
+                    var a4=document.getElementById('a4').textContent="";
+                    var a5=document.getElementById('a5').textContent="";
+                    var a6=document.getElementById('a6').textContent="";
+                    var a7=document.getElementById('a7').textContent="";
+                    var a8=document.getElementById('a8').textContent="";
+                    var a9=document.getElementById('a9').textContent="";
+                    document.getElementById('reset').textContent=""
+                      var a1a=document.getElementById('a1').style.background="black";
+                    
+                    var a2a=document.getElementById('a2').style.background="black";
+                    var a3a=document.getElementById('a3').style.background="black";
+                    var a4a=document.getElementById('a4').style.background="black";
+                    var a5a=document.getElementById('a5').style.background="black";
+                    var a6a=document.getElementById('a6').style.background="black";
+                    var a7a=document.getElementById('a7').style.background="black";
+                    var a8a=document.getElementById('a8').style.background="black";
+                    var a8a=document.getElementById('a9').style.background="black";
+
+           }
                     
 
 
